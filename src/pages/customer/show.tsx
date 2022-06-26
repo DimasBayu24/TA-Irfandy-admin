@@ -18,6 +18,9 @@ export const CustomerShow: React.FC<IResourceComponentsProps> = () => {
       <Title level={5}>Fullname</Title>
       <Text>{record?.Fullname}</Text>
 
+      <Title level={5}>Phone</Title>
+      <Text>{record?.Phone}</Text>
+
       <Title level={5}>Role</Title>
       <Text>{record?.Role}</Text>
     </Show>

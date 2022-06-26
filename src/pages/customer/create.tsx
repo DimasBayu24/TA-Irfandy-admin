@@ -44,6 +44,17 @@ export const CustomerCreate: React.FC<IResourceComponentsProps> = () => {
           <Input />
         </Form.Item>
         <Form.Item
+          label="Phone"
+          name="Phone"
+          rules={[
+            {
+              required: true,
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+        <Form.Item
           label="Password"
           name="Password"
           rules={[

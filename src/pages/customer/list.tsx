@@ -44,6 +44,12 @@ export const CustomerList: React.FC<IResourceComponentsProps> = () => {
           render={(value) => <TextField value={value} />}
         />
         <Table.Column
+          dataIndex="Phone"
+          key="Phone"
+          title="Phone"
+          render={(value) => <TextField value={value} />}
+        />
+        <Table.Column
           dataIndex="Role"
           key="Role"
           title="Role"

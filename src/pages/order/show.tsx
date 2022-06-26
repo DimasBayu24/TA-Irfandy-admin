@@ -23,6 +23,10 @@ export const OrderShow: React.FC<IResourceComponentsProps> = () => {
 
       <Title level={5}>Order Date</Title>
       <Text>{record?.OrderDate}</Text>
+
+      <Title level={5}>Payment Url</Title>
+      <Text>{record?.PaymentUrl}</Text>
+      <img src={record?.PaymentUrl} />
     </Show>
   );
 };

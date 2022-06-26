@@ -74,6 +74,7 @@ export interface ICustomer {
   ID: string;
   Username: string;
   Fullname: string;
+  Phone: string;
   Role: string;
 }
 
@@ -89,13 +90,14 @@ export interface IOrder {
   Status: 'Not_Done' | 'Done';
   OrderDate: string;
   TotalPrice: number;
+  PaymentUrl: string;
 }
 
 export interface IOrderItem {
   ID: string;
   OrderID: number;
   ProductID: number;
-  Quantity: number
+  Quantity: number;
 }
 
 export interface IProductPackage {
@@ -115,7 +117,7 @@ export interface ITransportation {
 export interface IOrderItem {
   ID: string;
   OrderID: string;
-  DestinationID: string
+  DestinationID: string;
 }
 
 export interface IProductOrder {

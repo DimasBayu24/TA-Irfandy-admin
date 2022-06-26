@@ -67,6 +67,12 @@ export const OrderList: React.FC<IResourceComponentsProps> = () => {
           render={(value) => <TextField value={value} />}
         />
         <Table.Column
+          dataIndex="PaymentUrl"
+          key="PaymentUrl"
+          title="Payment Url"
+          render={(value) => <TextField value={value} />}
+        />
+        <Table.Column
           dataIndex="OrderDate"
           key="OrderDate"
           title="Order Date"

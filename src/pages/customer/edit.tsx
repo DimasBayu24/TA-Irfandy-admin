@@ -36,6 +36,17 @@ export const CustomerEdit: React.FC<IResourceComponentsProps> = () => {
           <Input />
         </Form.Item>
         <Form.Item
+          label="Phone"
+          name="Phone"
+          rules={[
+            {
+              required: true,
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+        <Form.Item
           label="Role"
           name="Role"
           rules={[
